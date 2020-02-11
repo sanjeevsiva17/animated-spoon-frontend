@@ -1,0 +1,27 @@
+<div class="materialContainer">
+
+   <div class="box">
+
+
+      <form ngNativeValidate (ngSubmit)="login()">
+         <div class="title">LOGIN</div>
+
+         <div class="input">
+            <!-- <label for="name">Username</label> -->
+            <input type="text" name="name" id="name" placeholder="Username" [(ngModel)]="username" [required]="true">
+            <span class="spin"></span>
+         </div>
+
+         <div class="input">
+            <!-- <label for="pass">Password</label> -->
+            <input type="password" name="pass" id="pass" placeholder="Password" [(ngModel)]="password" [required]="true"
+               >
+            <span class="spin"></span>
+         </div>
+
+         <div class="button login">
+            <button type="submit" value="Submit"><span>GO</span> <i class="fa fa-check"></i></button>
+
+         </div>
+      </form>
+   </div>
